@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+body {
+    background-color: #3b4148;
+}
+
+main {
+    display: grid;
+    grid-template:
+        "clip-library video" auto
+        "clip-library meta" auto/
+        1fr auto;
+}
+
+.clip-library {
+    grid-area: clip-library;
+}
+.video {
+    grid-area: video;
+}
+.meta {
+    grid-area: meta;
+}
+
+/* TOP NAV */
+.project-complete {
+    position: absolute;
+}
+.top-nav {
+    display: grid;
+    place-items: center;
+
+    padding: 20px;
+
+    background-color: #343a3f;
+}
+.top-nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* CLIP LIBRARY */
+.clip-library {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.clip-library form label {
+    display: block;
+}
+
+.clip-library .clips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+.clip-library .item {
+    display: grid;
+    place-items: center;
+}
+
+/* VIDEO SECTION */
+.video-container video {
+    min-width: 400px;
+    max-width: 700px;
+}
