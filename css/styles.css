@@ -9,6 +9,12 @@
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
 }
+:root {
+    --tile-grey: #3b4148;
+    --orange: #e69500;
+    --border: 1px solid rgba(0, 0, 0, 0.329);
+    --box-shadow: 1px 1px 5px 1px #0000009d, -1px -1px 5px 1px #0000009d;
+}
 h2 {
     font-size: 20px;
     color: var(--orange);
@@ -38,12 +44,7 @@ section {
 .pop-out {
     box-shadow: var(--box-shadow);
 }
-:root {
-    --tile-grey: #3b4148;
-    --orange: #e69500;
-    --border: 1px solid rgba(0, 0, 0, 0.329);
-    --box-shadow: 1px 1px 3px 1px #000000d3, -1px -1px 3px 1px #000000d3;
-}
+
 .wrapper {
     padding: 10px;
 }
@@ -158,9 +159,11 @@ main {
 }
 
 /* VIDEO SECTION */
-/* .video-container video {
+video {
     min-width: 400px;
-    max-width: 700px;
-} */
+    max-width: 1200px;
+}
+.video-container video {
+}
 
 /* META DATA */
