@@ -49,46 +49,57 @@
         <section class="clip-library">
 
             <form action="" class="filters">
-                <label for="file-name">
-                    File Name:
-                </label>
-                <input type="text" name="file-name">
-                <label for="clip-length">
-                    Clip Length:
-                </label>
-                <input type="number" name="clip-length">
-                <label for="file-size">
-                    File Size:
-                </label>
-                <input type="number" name="file-size">
+                <h2>Filters</h2>
+                <hr>
+                <div class="grid">
+                    <label for="file-name">
+                        File Name:
+                    </label>
+                    <input type="text" name="file-name">
+                    <label for="clip-length">
+                        Clip Length:
+                    </label>
+                    <input placeholder="00:00"type="number" name="clip-length">
+                    <label for="file-size">
+                        File Size:
+                    </label>
+                    <input placeholder="MB"type="number" name="file-size">
+                </div>
                 <h3>
                     File Type:
                 </h3>
                     <label for="mp4">
+                        
+                        <input type="checkbox" id="mp4" name="mp4" value="mp4">
                         mp4
                     </label>
-                    <input type="checkbox" id="mp4" name="mp4" value="mp4">
                     <label for="mov">
+                        
+                        <input type="checkbox" id="mov" name="mov" value="mov">
                         mov
                     </label>
-                    <input type="checkbox" id="mov" name="mov" value="mov">
                     <label for="wmv">
+                        
+                        <input type="checkbox" id="wmv" name="wmv" value="wmv">
                         wmv
                     </label>
-                    <input type="checkbox" id="wmv" name="wmv" value="wmv">
                     <label for="html5">
+                        
+                        <input type="checkbox" id="html5" name="html5" value="html5">
                         html5
                     </label>
-                    <input type="checkbox" id="html5" name="html5" value="html5">
                     <label for="mpeg-2">
+                        
+                        <input type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
                         mpeg-2
                     </label>
-                    <input type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
                     <label for="date-created">
                         Date Created:
+                        <input type="date" name="date-created">
                     </label>
-                    <input type="date" name="date-created">
                 </h3>
+                <h2>Collections</h2>
+                <hr>
             </form>
 
             <div class="clips">
