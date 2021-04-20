@@ -9,71 +9,86 @@
 </head>
 <body>
     <nav class="top-nav">
+        
         <div class="project-complete">
-            <img src="assets/general icons/download.svg" alt="">
-            <span>Project New Video</span>
+            <svg width="30" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M382.56,233.376C379.968,227.648,374.272,224,368,224h-64V16c0-8.832-7.168-16-16-16h-64c-8.832,0-16,7.168-16,16v208h-64
+			c-6.272,0-11.968,3.68-14.56,9.376c-2.624,5.728-1.6,12.416,2.528,17.152l112,128c3.04,3.488,7.424,5.472,12.032,5.472
+			c4.608,0,8.992-2.016,12.032-5.472l112-128C384.192,245.824,385.152,239.104,382.56,233.376z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M432,352v96H80v-96H16v128c0,17.696,14.336,32,32,32h416c17.696,0,32-14.304,32-32V352H432z"/>
+	</g>
+</g>
+</svg>
+
+            <span>View Previous Projects</span>
         </div>
-        <ul>
-            <li>
-                <a href="#">Log</a>
-            </li>
-            <li>
-                <a href="#">Edit</a>
-            </li>
-            <li>
-                <a href="#">Vfx</a>
-            </li>
-            <li>
-                <a href="#">Audio</a>
-            </li>
-        </ul>
+            <ul>
+                <li class="active">
+                    <a href="#">LOG</a>
+                </li>
+                <li>
+                    <a href="#">EDIT</a>
+                </li>
+                <li>
+                    <a href="#">VFX</a>
+                </li>
+                <li>
+                    <a href="#">AUDIO</a>
+                </li>
+            </ul>
     </nav>
+    <div class="wrapper">
     <main>
         <section class="clip-library">
 
             <form action="" class="filters">
-                <label>
+                <label for="file-name">
                     File Name:
-                    <input type="text">
                 </label>
-                <label>
-                <label>
+                <input type="text" name="file-name">
+                <label for="clip-length">
                     Clip Length:
-                    <input type="number">
                 </label>
-                <label>
+                <input type="number" name="clip-length">
+                <label for="file-size">
                     File Size:
-                    <input type="number">
                 </label>
-                <label>
+                <input type="number" name="file-size">
+                <h3>
                     File Type:
-                    <label>
+                </h3>
+                    <label for="mp4">
                         mp4
-                        <input type="checkbox" id="mp4" name="mp4" value="mp4">
                     </label>
-                    <label>
+                    <input type="checkbox" id="mp4" name="mp4" value="mp4">
+                    <label for="mov">
                         mov
-                        <input type="checkbox" id="mov" name="mov" value="mov">
                     </label>
-                    <label>
+                    <input type="checkbox" id="mov" name="mov" value="mov">
+                    <label for="wmv">
                         wmv
-                        <input type="checkbox" id="wmv" name="wmv" value="wmv">
                     </label>
-                    <label>
+                    <input type="checkbox" id="wmv" name="wmv" value="wmv">
+                    <label for="html5">
                         html5
-                        <input type="checkbox" id="html5" name="html5" value="html5">
                     </label>
-                    <label>
+                    <input type="checkbox" id="html5" name="html5" value="html5">
+                    <label for="mpeg-2">
                         mpeg-2
-                        <input type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
                     </label>
-                    
-                </label>
-                <label>
-                    Date Created:
-                    <input type="date">
-                </label>
-                </label>
+                    <input type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
+                    <label for="date-created">
+                        Date Created:
+                    </label>
+                    <input type="date" name="date-created">
+                </h3>
             </form>
 
             <div class="clips">
@@ -230,13 +245,11 @@
                 <h3><span>Clip Name:</span>movie.mp4</h3>
             </div>
             <div class="video-player">
-                <div class="video-container">
-                    <video src=""></video>
-                </div>
             </div>
         </section>
         <section class="meta"
         ></section>
     </main>
 </body>
+</div>
 </html>
