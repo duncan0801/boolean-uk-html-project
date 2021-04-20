@@ -58,7 +58,7 @@ main {
     grid-template:
         "clip-library video" auto
         "clip-library meta" auto/
-        1fr 1fr;
+        1fr auto;
     gap: 10px;
 }
 
@@ -79,6 +79,7 @@ main {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 20px;
+    padding-left: 10px;
 }
 
 .project-complete svg {
@@ -134,17 +135,27 @@ main {
     display: inline-block;
 }
 
+.side-bar {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
 .clip-library .clips {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
     overflow-y: scroll;
+    padding: 10px;
 }
 
 .clip-library .item {
     display: grid;
-    grid-template-columns: ;
     place-items: center;
+    grid-template-rows: 1fr auto;
+    background-color: none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.397);
 }
 
 .clip-library .filters {
@@ -160,10 +171,45 @@ main {
 
 /* VIDEO SECTION */
 video {
-    min-width: 400px;
-    max-width: 1200px;
+    min-width: 500px;
+    max-width: 700px;
 }
-.video-container video {
+/* .video-container {
+    display: grid;
+    place-content: center;
+    max-width: 700px;
+} */
+
+.bar-below {
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-bottom: var(--border);
+}
+.time {
+    position: absolute;
+    left: 0;
+}
+.buttons-container {
+    display: grid;
+    place-items: center;
+}
+
+.bar-below .buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    height: 50px;
+    width: 50%;
+}
+
+.bar-below .buttons svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
 }
 
 /* META DATA */
+.meta {
+    overflow-y: scroll;
+}

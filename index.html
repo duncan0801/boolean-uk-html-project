@@ -31,10 +31,10 @@
         </div>
             <ul>
                 <li class="active">
-                    <a href="#">LOG</a>
+                    <a href="index.html">LOG</a>
                 </li>
                 <li>
-                    <a href="#">EDIT</a>
+                    <a href="edit.html">EDIT</a>
                 </li>
                 <li>
                     <a href="#">VFX</a>
@@ -48,208 +48,228 @@
     <main>
         <section class="clip-library">
 
-            <form action="" class="filters pop-out">
-                <h2>Filters</h2>
-                <hr>
-                <div class="grid">
-                    <label for="file-name">
-                        File Name:
-                    </label>
-                    <input type="text" name="file-name">
-                    <label for="clip-length">
-                        Clip Length:
-                    </label>
-                    <input placeholder="00:00"type="number" name="clip-length">
-                    <label for="file-size">
-                        File Size:
-                    </label>
-                    <input placeholder="MB"type="number" name="file-size">
-                </div>
-                <h3>
-                    File Type:
+            <form action="" class="side-bar pop-out">
+                <div class="filters">
+                    <h2>Filters</h2>
+                    <hr>
+                    <div class="grid">
+                        <label for="file-name">
+                            File Name:
+                        </label>
+                        <input type="text" name="file-name">
+                        <label for="clip-length">
+                            Clip Length:
+                        </label>
+                        <input placeholder="00:00"type="number" name="clip-length">
+                        <label for="file-size">
+                            File Size:
+                        </label>
+                        <input placeholder="MB"type="number" name="file-size">
+                    </div>
+                    <h3>
+                        File Type:
+                    </h3>
+                        <label for="mp4">
+                            <input class="checkbox" type="checkbox" id="mp4" name="mp4" value="mp4">
+                            <span class="custom-checkbox"></span>
+                            mp4
+                        </label>
+                        <label for="mov">
+                            <input class="checkbox" type="checkbox" id="mov" name="mov" value="mov">
+                            <span class="custom-checkbox"></span>
+                            mov
+                        </label>
+                        <label for="wmv">
+                            <input class="checkbox" type="checkbox" id="wmv" name="wmv" value="wmv">
+                            <span class="custom-checkbox"></span>
+                            wmv
+                        </label>
+                        <label for="html5">
+                            
+                            <input class="checkbox" type="checkbox" id="html5" name="html5" value="html5">
+                            <span class="custom-checkbox"></span>
+                            html5
+                        </label>
+                        <label for="mpeg-2">
+                            
+                            <input class="checkbox" type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
+                            <span class="custom-checkbox"></span>
+                            mpeg-2
+                        </label>
+                        <label for="date-created">
+                            Date Created:
+                            <input  type="date" name="date-created">
+                        </label>
+                    </div>
                 </h3>
-                    <label for="mp4">
-                        <input class="checkbox" type="checkbox" id="mp4" name="mp4" value="mp4">
-                        <span class="custom-checkbox"></span>
-                        mp4
-                    </label>
-                    <label for="mov">
-                        <input class="checkbox" type="checkbox" id="mov" name="mov" value="mov">
-                        <span class="custom-checkbox"></span>
-                        mov
-                    </label>
-                    <label for="wmv">
-                        <input class="checkbox" type="checkbox" id="wmv" name="wmv" value="wmv">
-                        <span class="custom-checkbox"></span>
-                        wmv
-                    </label>
-                    <label for="html5">
-                        
-                        <input class="checkbox" type="checkbox" id="html5" name="html5" value="html5">
-                        <span class="custom-checkbox"></span>
-                        html5
-                    </label>
-                    <label for="mpeg-2">
-                        
-                        <input class="checkbox" type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
-                        <span class="custom-checkbox"></span>
-                        mpeg-2
-                    </label>
-                    <label for="date-created">
-                        Date Created:
-                        <input  type="date" name="date-created">
-                    </label>
-                </h3>
-                <h2>Collections</h2>
-                <hr>
             </form>
 
-            <div class="clips">
-                <div class="item">
+            <form class="clips">
+                
+                <label for="clip-selection-1" class="item">
+                    <input type="checkbox" name="clip-selection-1" id="clip-selection-1">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-2" class="item">
+                    <input type="checkbox" name="clip-selection-2" id="clip-selection-2">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-3" class="item">
+                    <input type="checkbox" name="clip-selection-3" id="clip-selection-3">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-4" class="item">
+                    <input type="checkbox" name="clip-selection-4" id="clip-selection-4">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-5" class="item">
+                    <input type="checkbox" name="clip-selection-5" id="clip-selection-5">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-6" class="item">
+                    <input type="checkbox" name="clip-selection-6" id="clip-selection-6">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-7" class="item">
+                    <input type="checkbox" name="clip-selection-7" id="clip-selection-7">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-8" class="item">
+                    <input type="checkbox" name="clip-selection-8" id="clip-selection-8">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-9" class="item">
+                    <input type="checkbox" name="clip-selection-9" id="clip-selection-9">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-10" class="item">
+                    <input type="checkbox" name="clip-selection-10" id="clip-selection-10">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-11" class="item">
+                    <input type="checkbox" name="clip-selection-11" id="clip-selection-11">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-12" class="item">
+                    <input type="checkbox" name="clip-selection-12" id="clip-selection-12">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-13" class="item">
+                    <input type="checkbox" name="clip-selection-13" id="clip-selection-13">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-14" class="item">
+                    <input type="checkbox" name="clip-selection-14" id="clip-selection-14">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-15" class="item">
+                    <input type="checkbox" name="clip-selection-15" id="clip-selection-15">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-16" class="item">
+                    <input type="checkbox" name="clip-selection-16" id="clip-selection-16">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-17" class="item">
+                    <input type="checkbox" name="clip-selection-17" id="clip-selection-17">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-18" class="item">
+                    <input type="checkbox" name="clip-selection-18" id="clip-selection-18">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-19" class="item">
+                    <input type="checkbox" name="clip-selection-19" id="clip-selection-19">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-20" class="item">
+                    <input type="checkbox" name="clip-selection-20" id="clip-selection-20">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-21" class="item">
+                    <input type="checkbox" name="clip-selection-21" id="clip-selection-21">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-22" class="item">
+                    <input type="checkbox" name="clip-selection-22" id="clip-selection-22">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-23" class="item">
+                    <input type="checkbox" name="clip-selection-23" id="clip-selection-23">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-24" class="item">
+                    <input type="checkbox" name="clip-selection-24" id="clip-selection-24">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-25" class="item">
+                    <input type="checkbox" name="clip-selection-25" id="clip-selection-25">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-26" class="item">
+                    <input type="checkbox" name="clip-selection-26" id="clip-selection-26">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-27" class="item">
+                    <input type="checkbox" name="clip-selection-27" id="clip-selection-27">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
+                </label>
+                <label for="clip-selection-28" class="item">
+                    <input type="checkbox" name="clip-selection-28" id="clip-selection-28">
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
+                </label>
+
+                <div class="import">
+                    <button>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M435.2,153.6H320v25.6h102.4v307.2H89.6V179.2H192v-25.6H76.8c-7.066,0-12.8,5.734-12.8,12.8v332.8
+                                c0,7.066,5.734,12.8,12.8,12.8h358.4c7.066,0,12.8-5.734,12.8-12.8V166.4C448,159.334,442.266,153.6,435.2,153.6z"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M341.956,234.249c-4.941-5.052-13.056-5.146-18.099-0.205L268.8,287.898V12.8C268.8,5.734,263.066,0,256,0
+                                c-7.066,0-12.8,5.734-12.791,12.8v275.089l-55.057-53.854c-5.043-4.941-13.158-4.847-18.099,0.205
+                                c-4.941,5.06-4.855,13.158,0.205,18.099l76.8,75.128c5.043,4.949,13.158,4.855,18.099-0.188l76.595-74.931
+                                C346.803,247.407,346.897,239.309,341.956,234.249z"/>
+                        </g>
+                    </g>
+                </svg>
+                Import To Project</button>
                 </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-            </div>
+                
+            </form>
 
         </section>
         <section class="video pop-out">
@@ -257,12 +277,90 @@
                 <h2>Video Viewer</h2>
                 <h3><span>Clip Name:</span>movie.mp4</h3>
             </div>
-            <div class="video-player">
-                <video src="video/video3.mp4"></video>
+            <div class="video-container">
+                <video autoplay muted src="video/video3.mp4"></video>
+            </div>
+            <div class="bar-below">
+                <div class="time">
+                    <span>00:00:00+00</span>
+                </div>
+                <div class="buttons">
+                    <svg transform="rotate(180)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                width="306px" height="306px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                    <g>
+	                <g id="skip-next">
+		            <path d="M0,306l216.75-153L0,0V306z M255,0v306h51V0H255z"/>
+	                </g>
+                    </g>
+                </svg>
+
+                    <svg transform="rotate(180)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="446.25px" height="446.25px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;"
+                    xml:space="preserve">
+                    <g>
+                        <g id="fast-forward">
+                            <path d="M0,376.125l216.75-153L0,70.125V376.125z M229.5,70.125v306l216.75-153L229.5,70.125z"/>
+                        </g>
+                    </g>
+                    </svg>
+
+                    <svg height="327pt" viewBox="-45 0 327 327" width="327pt" xmlns="http://www.w3.org/2000/svg"><path d="m158 0h71c4.417969 0 8 3.582031 8 8v311c0 4.417969-3.582031 8-8 8h-71c-4.417969 0-8-3.582031-8-8v-311c0-4.417969 3.582031-8 8-8zm0 0"/><path d="m8 0h71c4.417969 0 8 3.582031 8 8v311c0 4.417969-3.582031 8-8 8h-71c-4.417969 0-8-3.582031-8-8v-311c0-4.417969 3.582031-8 8-8zm0 0"/></svg>
+
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="446.25px" height="446.25px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;"
+                    xml:space="preserve">
+                    <g>
+                    <g id="fast-forward">
+                        <path d="M0,376.125l216.75-153L0,70.125V376.125z M229.5,70.125v306l216.75-153L229.5,70.125z"/>
+                    </g>
+                </g>
+
+                </svg>
+
+                    
+                    
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                width="306px" height="306px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                    <g>
+	                <g id="skip-next">
+		            <path d="M0,306l216.75-153L0,0V306z M255,0v306h51V0H255z"/>
+	                </g>
+                    </g>
+                    </svg>
+                    
+
+                </div>
             </div>
         </section>
-        <section class="meta pop-out"
-        ></section>
+        <section class="meta pop-out">
+            <h2>MetaData</h2>
+            <table>
+                
+                <tbody>
+                    <tr>
+                        <td>Name</td><td>Mountain Biking Video 001</td>
+                    </tr>
+                    <tr>
+                        <td>Creation Date</td><td>12/03/2021</td>
+                    </tr>
+                    <tr>
+                        <td>Modification Date</td><td>23/04/2021</td>
+                    </tr>
+                    <tr>
+                        <td>Tracks</td><td>V1</td>
+                    </tr>
+                    <tr>
+                        <td>Scene</td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Shot</td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Reel ID</td><td>001</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </div>
