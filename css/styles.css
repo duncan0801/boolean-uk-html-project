@@ -13,10 +13,30 @@ h2 {
     font-size: 20px;
     color: var(--orange);
 }
+input {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: grey;
+}
+/* .checkbox {
+    opacity: 0;
+}
+.custom-checkbox {
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 5px;
+} */
 section {
     border: var(--border);
     box-shadow: -1px 1px 5px 2px rgba(107, 107, 107, 0.267);
     padding: 10px;
+}
+.pop-out {
+    box-shadow: var(--box-shadow);
 }
 :root {
     --tile-grey: #3b4148;
@@ -38,6 +58,7 @@ main {
         "clip-library video" auto
         "clip-library meta" auto/
         1fr 1fr;
+    gap: 10px;
 }
 
 .clip-library {
@@ -106,7 +127,6 @@ main {
 }
 .clip-library form {
     border-right: var(--border);
-    box-shadow: var(--box-shadow);
     padding: 10px;
 }
 .clip-library form label {
@@ -142,3 +162,5 @@ main {
     min-width: 400px;
     max-width: 700px;
 } */
+
+/* META DATA */

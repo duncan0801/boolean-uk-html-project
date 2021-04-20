@@ -48,7 +48,7 @@
     <main>
         <section class="clip-library">
 
-            <form action="" class="filters">
+            <form action="" class="filters pop-out">
                 <h2>Filters</h2>
                 <hr>
                 <div class="grid">
@@ -69,33 +69,35 @@
                     File Type:
                 </h3>
                     <label for="mp4">
-                        
-                        <input type="checkbox" id="mp4" name="mp4" value="mp4">
+                        <input class="checkbox" type="checkbox" id="mp4" name="mp4" value="mp4">
+                        <span class="custom-checkbox"></span>
                         mp4
                     </label>
                     <label for="mov">
-                        
-                        <input type="checkbox" id="mov" name="mov" value="mov">
+                        <input class="checkbox" type="checkbox" id="mov" name="mov" value="mov">
+                        <span class="custom-checkbox"></span>
                         mov
                     </label>
                     <label for="wmv">
-                        
-                        <input type="checkbox" id="wmv" name="wmv" value="wmv">
+                        <input class="checkbox" type="checkbox" id="wmv" name="wmv" value="wmv">
+                        <span class="custom-checkbox"></span>
                         wmv
                     </label>
                     <label for="html5">
                         
-                        <input type="checkbox" id="html5" name="html5" value="html5">
+                        <input class="checkbox" type="checkbox" id="html5" name="html5" value="html5">
+                        <span class="custom-checkbox"></span>
                         html5
                     </label>
                     <label for="mpeg-2">
                         
-                        <input type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
+                        <input class="checkbox" type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
+                        <span class="custom-checkbox"></span>
                         mpeg-2
                     </label>
                     <label for="date-created">
                         Date Created:
-                        <input type="date" name="date-created">
+                        <input  type="date" name="date-created">
                     </label>
                 </h3>
                 <h2>Collections</h2>
@@ -250,15 +252,16 @@
             </div>
 
         </section>
-        <section class="video">
+        <section class="video pop-out">
             <div class="header">
                 <h2>Video Viewer</h2>
                 <h3><span>Clip Name:</span>movie.mp4</h3>
             </div>
             <div class="video-player">
+                <video src="https://www.youtube.com/watch?v=oQDLAoPs-as&t=104s&ab_channel=OutsideTV" autoplay></video>
             </div>
         </section>
-        <section class="meta"
+        <section class="meta pop-out"
         ></section>
     </main>
 </body>
