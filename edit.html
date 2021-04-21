@@ -46,217 +46,442 @@
             </ul>
     </nav>
     <main>
+
         <section class="clip-library">
 
-            <form action="" class="filters pop-out">
-                <h2>Filters</h2>
-                <hr>
-                <div class="grid">
-                    <label for="file-name">
-                        File Name:
-                    </label>
-                    <input type="text" name="file-name">
-                    <label for="clip-length">
-                        Clip Length:
-                    </label>
-                    <input placeholder="00:00"type="number" name="clip-length">
-                    <label for="file-size">
-                        File Size:
-                    </label>
-                    <input placeholder="MB"type="number" name="file-size">
-                </div>
-                <h3>
-                    File Type:
+            <form action="" class="side-bar pop-out">
+                <div class="filters">
+                    <h2>Filters</h2>
+                    <hr>
+                    <div class="grid">
+                        <label for="file-name">
+                            File Name:
+                        </label>
+                        <input type="text" name="file-name">
+                        <label for="clip-length">
+                            Clip Length:
+                        </label>
+                        <input placeholder="00:00"type="number" name="clip-length">
+                        <label for="file-size">
+                            File Size:
+                        </label>
+                        <input placeholder="MB"type="number" name="file-size">
+                    </div>
+                    <h3>
+                        File Type:
+                    </h3>
+                        <label for="mp4">
+                            <input class="checkbox" type="checkbox" id="mp4" name="mp4" value="mp4">
+                            <span class="custom-checkbox"></span>
+                            mp4
+                        </label>
+                        <label for="mov">
+                            <input class="checkbox" type="checkbox" id="mov" name="mov" value="mov">
+                            <span class="custom-checkbox"></span>
+                            mov
+                        </label>
+                        <label for="wmv">
+                            <input class="checkbox" type="checkbox" id="wmv" name="wmv" value="wmv">
+                            <span class="custom-checkbox"></span>
+                            wmv
+                        </label>
+                        <label for="html5">
+                            
+                            <input class="checkbox" type="checkbox" id="html5" name="html5" value="html5">
+                            <span class="custom-checkbox"></span>
+                            html5
+                        </label>
+                        <label for="mpeg-2">
+                            
+                            <input class="checkbox" type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
+                            <span class="custom-checkbox"></span>
+                            mpeg-2
+                        </label>
+                        <label for="date-created">
+                            Date Created:
+                            <input  type="date" name="date-created">
+                        </label>
+                    </div>
                 </h3>
-                    <label for="mp4">
-                        <input class="checkbox" type="checkbox" id="mp4" name="mp4" value="mp4">
-                        <span class="custom-checkbox"></span>
-                        mp4
-                    </label>
-                    <label for="mov">
-                        <input class="checkbox" type="checkbox" id="mov" name="mov" value="mov">
-                        <span class="custom-checkbox"></span>
-                        mov
-                    </label>
-                    <label for="wmv">
-                        <input class="checkbox" type="checkbox" id="wmv" name="wmv" value="wmv">
-                        <span class="custom-checkbox"></span>
-                        wmv
-                    </label>
-                    <label for="html5">
-                        
-                        <input class="checkbox" type="checkbox" id="html5" name="html5" value="html5">
-                        <span class="custom-checkbox"></span>
-                        html5
-                    </label>
-                    <label for="mpeg-2">
-                        
-                        <input class="checkbox" type="checkbox" id="mpeg-2" name="mpeg-2" value="mpeg-2">
-                        <span class="custom-checkbox"></span>
-                        mpeg-2
-                    </label>
-                    <label for="date-created">
-                        Date Created:
-                        <input  type="date" name="date-created">
-                    </label>
-                </h3>
-                <h2>Collections</h2>
-                <hr>
             </form>
-
-            <div class="clips">
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
+            <div class="clips-section">
+                <h2>Imported Clips:</h2>
+                <div class="clips">
+                
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">001.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">002.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">003.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">004.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">005.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">006.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">007.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">008.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">009.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">010.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">011.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">012.mp4</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="assets/general icons/clapperboard.svg" alt="">
+                        <p class="clip-title">013.mp4</p>
+                    </div>
+                    
                 </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
-                <div class="item">
-                    <img src="assets/general icons/clapperboard.svg" alt="">
-                    <p class="clip-title">movie.mp4</p>
-                </div>
+            </div>
+            
+                
             </div>
 
         </section>
-        <section class="effects"></section>
-        <section class="tracks">
-            <div class="track-links"></div>
-            <div class="tracks"></div>
+
+        <section class="video pop-out">
+            <div class="header">
+                <h2>Video Viewer</h2>
+                <h3><span>Clip Name:</span>movie.mp4</h3>
+            </div>
+            <div class="video-container">
+                <video autoplay muted src="video/video3.mp4"></video>
+            </div>
+            <div class="bar-below">
+                <div class="time">
+                    <span>00:00:00+00</span>
+                </div>
+                <div class="buttons">
+                    <svg transform="rotate(180)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                width="306px" height="306px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                    <g>
+	                <g id="skip-next">
+		            <path d="M0,306l216.75-153L0,0V306z M255,0v306h51V0H255z"/>
+	                </g>
+                    </g>
+                </svg>
+
+                    <svg transform="rotate(180)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="446.25px" height="446.25px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;"
+                    xml:space="preserve">
+                    <g>
+                        <g id="fast-forward">
+                            <path d="M0,376.125l216.75-153L0,70.125V376.125z M229.5,70.125v306l216.75-153L229.5,70.125z"/>
+                        </g>
+                    </g>
+                    </svg>
+
+                    <svg height="327pt" viewBox="-45 0 327 327" width="327pt" xmlns="http://www.w3.org/2000/svg"><path d="m158 0h71c4.417969 0 8 3.582031 8 8v311c0 4.417969-3.582031 8-8 8h-71c-4.417969 0-8-3.582031-8-8v-311c0-4.417969 3.582031-8 8-8zm0 0"/><path d="m8 0h71c4.417969 0 8 3.582031 8 8v311c0 4.417969-3.582031 8-8 8h-71c-4.417969 0-8-3.582031-8-8v-311c0-4.417969 3.582031-8 8-8zm0 0"/></svg>
+
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="446.25px" height="446.25px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;"
+                    xml:space="preserve">
+                    <g>
+                    <g id="fast-forward">
+                        <path d="M0,376.125l216.75-153L0,70.125V376.125z M229.5,70.125v306l216.75-153L229.5,70.125z"/>
+                    </g>
+                </g>
+
+                </svg>
+
+                    
+                    
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                width="306px" height="306px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                    <g>
+	                <g id="skip-next">
+		            <path d="M0,306l216.75-153L0,0V306z M255,0v306h51V0H255z"/>
+	                </g>
+                    </g>
+                    </svg>
+                    
+
+                </div>
+            </div>
         </section>
+       
+        <section class="tracks-editing">
+            
+            <nav class="track-links">
+                <h2>Scroll to track:</h2>
+                <ul>
+
+                    <li class="track-name">
+                        
+                        <a href="#t1">
+                            A1/V1
+                        </a>
+                        
+                    </li>
+                    
+
+                    <li class="track-name">
+                        
+                        <a href="#t1">
+                            A2/V2
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t2">
+                            A3/V3
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t3">
+                            A4/V4
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t4">
+                            A5/V5
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t5">
+                            A6/V6
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t6">
+                            A7/V7
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t7">
+                            A8/V8
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t8">
+                            A9/V9
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t9">
+                            A10/V10
+                        </a>
+                        
+                    </li>
+
+                    <li class="track-name">
+                        
+                        <a href="#t10">
+                            A11/V11
+                        </a>
+                        
+                    </li>
+
+                    
+                </ul>
+
+
+                    
+            </nav>
+            <div class="tracks">
+                <div class="timeline">
+                    <div class="time-section">
+                        <p class="time-value">00:00:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">00:30:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">01:00:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">01:30:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">02:00:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">02:30:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">03:00:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">04:00:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">04:30:00+00</p>
+                    </div>
+                    <div class="time-section">
+                        <p class="time-value">05:00:00+00</p>
+                    </div>
+                </div>
+
+                <div id="t1" class="track">
+                    
+                    <div class="video">
+                        <h3>V1</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A1</h3>
+                    </div>
+                </div> 
+                <div id="t2" class="track">
+                    
+                    <div class="video">
+                        <h3>V2</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A2</h3>
+                    </div>
+                </div> 
+                <div id="t3" class="track">
+                    
+                    <div class="video">
+                        <h3>V3</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A3</h3>
+                    </div>
+                </div> 
+                <div id="t4" class="track">
+                    
+                    <div class="video">
+                        <h3>V4</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A4</h3>
+                    </div>
+                </div> 
+                <div id="t5" class="track">
+                    
+                    <div class="video">
+                        <h3>V5</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A5</h3>
+                    </div>
+                </div> 
+                <div id="t6" class="track">
+                    
+                    <div class="video">
+                        <h3>V6</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A6</h3>
+                    </div>
+                </div> 
+                <div id="t7" class="track">
+                    
+                    <div class="video">
+                        <h3>V7</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A7</h3>
+                    </div>
+                </div> 
+                <div id="t8" class="track">
+                    
+                    <div class="video">
+                        <h3>V8</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A8</h3>
+                    </div>
+                </div> 
+                <div id="t9" class="track">
+                    
+                    <div class="video">
+                        <h3>V9</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A9</h3>
+                    </div>
+                </div> 
+                <div id="t10" class="track">
+                    
+                    <div class="video">
+                        <h3>V10</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A10</h3>
+                    </div>
+                </div> 
+                <div id="t11" class="track">
+                    
+                    <div class="video">
+                        <h3>V11</h3>
+                    </div>
+                    <div class="audio">
+                        <h3>A11</h3>
+                    </div>
+                </div> 
+            </div>
+                
+
+                    
+        </section>
+
     </main>
 </body>
 </html>

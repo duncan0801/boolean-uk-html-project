@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="top-nav">
+    
+    <header class="top-nav">
         
         <div class="project-complete">
             <svg width="30" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -29,6 +30,7 @@
 
             <span>View Previous Projects</span>
         </div>
+        <nav>
             <ul>
                 <li class="active">
                     <a href="index.html">LOG</a>
@@ -43,8 +45,9 @@
                     <a href="#">AUDIO</a>
                 </li>
             </ul>
-    </nav>
-    <div class="wrapper">
+        </nav>
+    </header>
+    <div class="page-padding">
     <main>
         <section class="clip-library">
 
@@ -104,7 +107,9 @@
                 </h3>
             </form>
 
-            <form class="clips">
+            <form class="">
+
+                <div class="clips">
                 
                 <label for="clip-selection-1" class="item">
                     <input type="checkbox" name="clip-selection-1" id="clip-selection-1">
@@ -246,9 +251,10 @@
                     <img src="assets/general icons/clapperboard.svg" alt="">
                     <p class="clip-title">movie.mp4</p>
                 </label>
+            </div>
 
-                <div class="import">
-                    <button>
+                
+                    <button type="submit">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                     <g>
@@ -267,7 +273,7 @@
                     </g>
                 </svg>
                 Import To Project</button>
-                </div>
+              
                 
             </form>
 
@@ -338,10 +344,10 @@
                 
                 <tbody>
                     <tr>
-                        <td>Name</td><td>Mountain Biking Video 001</td>
+                        <th>Name</th><td>Mountain Biking Video 001</td>
                     </tr>
                     <tr>
-                        <td>Creation Date</td><td>12/03/2021</td>
+                        <th>Creation Date</th><td>12/03/2021</td>
                     </tr>
                     <tr>
                         <td>Modification Date</td><td>23/04/2021</td>
