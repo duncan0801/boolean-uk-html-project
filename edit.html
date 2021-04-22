@@ -4,47 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Movie Editor</title>
+    <title>MovEdit - Editor</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/edit.css">
 </head>
 <body>
-    <nav class="top-nav">
-        
-        <div class="project-complete">
-            <svg width="30" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M382.56,233.376C379.968,227.648,374.272,224,368,224h-64V16c0-8.832-7.168-16-16-16h-64c-8.832,0-16,7.168-16,16v208h-64
-			c-6.272,0-11.968,3.68-14.56,9.376c-2.624,5.728-1.6,12.416,2.528,17.152l112,128c3.04,3.488,7.424,5.472,12.032,5.472
-			c4.608,0,8.992-2.016,12.032-5.472l112-128C384.192,245.824,385.152,239.104,382.56,233.376z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M432,352v96H80v-96H16v128c0,17.696,14.336,32,32,32h416c17.696,0,32-14.304,32-32V352H432z"/>
-	</g>
-</g>
-</svg>
-
-            <span>View Previous Projects</span>
-        </div>
-            <ul>
-                <li >
-                    <a href="index.html">LOG</a>
-                </li>
-                <li class="active">
-                    <a href="#">EDIT</a>
-                </li>
-                <li>
-                    <a href="#">VFX</a>
-                </li>
-                <li>
-                    <a href="#">AUDIO</a>
-                </li>
-            </ul>
-    </nav>
+    <header>
+        <nav class="top-nav">
+            
+            <div class="project-complete">
+                <a href="create-project.html">
+                <svg width="30" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+    <g>
+        <g>
+            <path d="M382.56,233.376C379.968,227.648,374.272,224,368,224h-64V16c0-8.832-7.168-16-16-16h-64c-8.832,0-16,7.168-16,16v208h-64
+                c-6.272,0-11.968,3.68-14.56,9.376c-2.624,5.728-1.6,12.416,2.528,17.152l112,128c3.04,3.488,7.424,5.472,12.032,5.472
+                c4.608,0,8.992-2.016,12.032-5.472l112-128C384.192,245.824,385.152,239.104,382.56,233.376z"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <path d="M432,352v96H80v-96H16v128c0,17.696,14.336,32,32,32h416c17.696,0,32-14.304,32-32V352H432z"/>
+        </g>
+    </g>
+    </svg>
+    
+                <span>View Previous Projects</span>
+                </a>
+            </div>
+                <ul>
+                    <li >
+                        <a href="index.html">LOG</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">EDIT</a>
+                    </li>
+                    <li>
+                        <a href="#">VFX</a>
+                    </li>
+                    <li>
+                        <a href="#">AUDIO</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
     <main>
 
         <section class="clip-library">
@@ -181,7 +185,7 @@
 
         </section>
 
-        <section class="video pop-out">
+        <section class="video-player pop-out">
             <div class="header">
                 <h2>Video Viewer</h2>
                 <h3><span>Clip Name:</span>movie.mp4</h3>
@@ -242,7 +246,7 @@
             </div>
         </section>
        
-        <section class="tracks-editing">
+        <section class="tracks-editing pop-out">
             
             <nav class="track-links">
                 <h2>Scroll to track:</h2>
@@ -344,138 +348,153 @@
                     
             </nav>
             <div class="tracks">
-                <div class="timeline">
-                    <div class="time-section">
-                        <p class="time-value">00:00:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">00:30:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">01:00:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">01:30:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">02:00:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">02:30:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">03:00:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">04:00:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">04:30:00+00</p>
-                    </div>
-                    <div class="time-section">
-                        <p class="time-value">05:00:00+00</p>
-                    </div>
+                <div class="scrollable-section">
+                    <ul class="timeline">
+                        <li class="time-section">
+                            <p class="time-value">00:00:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">00:30:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">01:00:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">01:30:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">02:00:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">02:30:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">03:00:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">04:00:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">04:30:00+00</p>
+                        </li>
+                        <li class="time-section">
+                            <p class="time-value">05:00:00+00</p>
+                        </li>
+                    </ul>
+                    <ul class="track-list">
+                        <li id="t1" class="track">
+                            
+                            <div class="video">
+                                <h3>V1</h3>
+                                <div class="t1 clip-box video-box">
+                                    001.mp4
+                                </div>
+                            </div>
+                            <div class="audio">
+                                <h3>A1</h3>
+                                <div class="t1 clip-box audio-box"></div>
+                            </div>
+                        </li> 
+                        <li id="t2" class="track">
+                            
+                            <div class="video">
+                                <h3>V2</h3>
+                                <div class="t2 clip-box video-box">013.mp4</div>
+                            </div>
+                            <div class="audio">
+                                <h3>A2</h3>
+                                <div class="t2 clip-box audio-box"></div>
+                            </div>
+                        </li> 
+                        <li id="t3" class="track">
+                            
+                            <div class="video">
+                                <h3>V3</h3>
+                                <div class="t3 clip-box video-box">007.mp4</div>
+                            </div>
+                            <div class="audio">
+                                <h3>A3</h3>
+                                <div class="t3 clip-box audio-box"></div>
+                            </div>
+                        </li> 
+                        <li id="t4" class="track">
+                            
+                            <div class="video">
+                                <h3>V4</h3>
+                                <div class="t4 clip-box video-box">009.mp4</div>
+                            </div>
+                            <div class="audio">
+                                <h3>A4</h3>
+                                <div class="t4 clip-box audio-box"></div>
+                            </div>
+                        </li> 
+                        <li id="t5" class="track">
+                            
+                            <div class="video">
+                                <h3>V5</h3>
+                                <div class="t5 clip-box video-box">005.mp4</div>
+                            </div>
+                            <div class="audio">
+                                <h3>A5</h3>
+                                <div class="t5 clip-box audio-box"></div>
+                            </div>
+                        </li> 
+                        <li id="t6" class="track">
+                            
+                            <div class="video">
+                                <h3>V6</h3>
+                            </div>
+                            <div class="audio">
+                                <h3>A6</h3>
+                            </div>
+                        </li> 
+                        <li id="t7" class="track">
+                            
+                            <div class="video">
+                                <h3>V7</h3>
+                            </div>
+                            <div class="audio">
+                                <h3>A7</h3>
+                            </div>
+                        </li> 
+                        <li id="t8" class="track">
+                            
+                            <div class="video">
+                                <h3>V8</h3>
+                            </div>
+                            <div class="audio">
+                                <h3>A8</h3>
+                            </div>
+                        </li> 
+                        <li id="t9" class="track">
+                            
+                            <div class="video">
+                                <h3>V9</h3>
+                            </div>
+                            <div class="audio">
+                                <h3>A9</h3>
+                            </div>
+                        </li> 
+                        <li id="t10" class="track">
+                            
+                            <div class="video">
+                                <h3>V10</h3>
+                            </div>
+                            <div class="audio">
+                                <h3>A10</h3>
+                            </div>
+                        </li> 
+                        <li id="t11" class="track">
+                            
+                            <div class="video">
+                                <h3>V11</h3>
+                            </div>
+                            <div class="audio">
+                                <h3>A11</h3>
+                            </div>
+                        </li> 
+                    </ul>
                 </div>
-
-                <div id="t1" class="track">
-                    
-                    <div class="video">
-                        <h3>V1</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A1</h3>
-                    </div>
-                </div> 
-                <div id="t2" class="track">
-                    
-                    <div class="video">
-                        <h3>V2</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A2</h3>
-                    </div>
-                </div> 
-                <div id="t3" class="track">
-                    
-                    <div class="video">
-                        <h3>V3</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A3</h3>
-                    </div>
-                </div> 
-                <div id="t4" class="track">
-                    
-                    <div class="video">
-                        <h3>V4</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A4</h3>
-                    </div>
-                </div> 
-                <div id="t5" class="track">
-                    
-                    <div class="video">
-                        <h3>V5</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A5</h3>
-                    </div>
-                </div> 
-                <div id="t6" class="track">
-                    
-                    <div class="video">
-                        <h3>V6</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A6</h3>
-                    </div>
-                </div> 
-                <div id="t7" class="track">
-                    
-                    <div class="video">
-                        <h3>V7</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A7</h3>
-                    </div>
-                </div> 
-                <div id="t8" class="track">
-                    
-                    <div class="video">
-                        <h3>V8</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A8</h3>
-                    </div>
-                </div> 
-                <div id="t9" class="track">
-                    
-                    <div class="video">
-                        <h3>V9</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A9</h3>
-                    </div>
-                </div> 
-                <div id="t10" class="track">
-                    
-                    <div class="video">
-                        <h3>V10</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A10</h3>
-                    </div>
-                </div> 
-                <div id="t11" class="track">
-                    
-                    <div class="video">
-                        <h3>V11</h3>
-                    </div>
-                    <div class="audio">
-                        <h3>A11</h3>
-                    </div>
-                </div> 
             </div>
                 
 

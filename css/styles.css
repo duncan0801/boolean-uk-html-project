@@ -14,6 +14,11 @@
 ::-webkit-scrollbar {
     display: none;
 }
+.logo {
+    font-family: "Zen Dots", cursive;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+}
 :root {
     --tile-grey: #3b4148;
     --orange: #e69500;
@@ -23,6 +28,9 @@
 h2 {
     font-size: 20px;
     color: var(--orange);
+}
+.left {
+    transform: rotate(180deg);
 }
 input {
     background: none;
@@ -41,7 +49,7 @@ input {
     display: inline-block;
     border-radius: 5px;
 } */
-section {
+section:not(.clip-library) {
     border: var(--border);
     box-shadow: -1px 1px 5px 2px rgba(107, 107, 107, 0.267);
     padding: 10px;
@@ -69,15 +77,18 @@ body {
 main {
     display: grid;
     grid-template:
-        "clip-library video" auto
-        "clip-library meta" auto/
-        1fr auto;
+        "clip-library video" minmax(450px, 1fr)
+        "clip-library meta" 1fr /
+        minmax(550px, 1fr) auto;
     gap: 10px;
+    padding: 10px;
+    height: calc(100vh - 75px);
 }
 
 .clip-library {
     grid-area: clip-library;
 }
+
 .video {
     grid-area: video;
 }
@@ -137,8 +148,7 @@ main {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
-
-    height: calc(100vh - 82px);
+    height: calc(100vh - 87px);
 }
 .clip-library form {
     border-right: var(--border);
@@ -182,13 +192,15 @@ main {
     gap: 20px;
 
     padding: 10px;
+
+    overflow-y: scroll;
+    min-width: 200px;
 }
 
 .clip-library .item {
     display: grid;
     place-items: center;
     grid-template-rows: 1fr auto;
-    background-color: none;
     border-radius: 15px;
     padding: 10px;
     box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.397);
@@ -207,19 +219,15 @@ main {
 
 /* VIDEO SECTION */
 video {
-    min-width: 500px;
-    max-width: 700px;
+    width: 100%;
+    height: 100%;
 }
-/* .video-container {
+.video-container {
     display: grid;
     place-content: center;
-    max-width: 700px;
-} 
-
-  video {
-    width: 100%;
-  }   
-*/
+    min-width: 400px;
+    max-width: fit-content;
+}
 
 .bar-below {
     display: grid;
@@ -253,4 +261,31 @@ video {
 /* META DATA */
 .meta {
     overflow-y: scroll;
+}
+
+/* ANIMATIONS */
+.clip-library .item:hover {
+    background-color: #5f5f5fb2;
+    transition: 0.1s;
+}
+.clip-library .item:focus {
+    background-color: #00a000b2;
+}
+
+.clip-library button:hover {
+    transform: scale(1.1);
+}
+.clip-library button:active {
+    background: -webkit-linear-gradient(#00709c, #00a5e6);
+    transform: scale(1);
+}
+
+.buttons svg:hover {
+    transform: scale(1.1);
+}
+.buttons svg:active {
+    transform: scale(1);
+}
+.buttons svg.left:hover {
+    transform: rotate(180deg) scale(1.1);
 }
