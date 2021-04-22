@@ -14,3 +14,18 @@ h2.active {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
+.project-grid ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+}
+
+.project-grid img,
+.project-grid svg {
+    object-fit: cover;
+}
+
+.project-grid ul .image-container {
+    width: 100px;
+    
+}
