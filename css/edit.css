@@ -140,10 +140,7 @@
     background-color: rgba(124, 240, 255, 0.815);
 }
 
-.fx-menu {
-    display: none;
-    background-color: white;
-}
+
 .down-arrow-container {
     width: 10px;
     position: relative;
