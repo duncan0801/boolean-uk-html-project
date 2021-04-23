@@ -1,9 +1,10 @@
-main {
+.main {
     display: grid;
     grid-template:
         "clip-library video" minmax(auto, 350px)
         "tracks tracks" 1fr /
         minmax(550px, 1fr) auto;
+        
 }
 .clip-library {
     grid-area: clip-library;
@@ -28,7 +29,8 @@ main {
 .tracks-editing {
     display: grid;
     grid-template-columns: auto 1fr;
-    height: 380px;
+    
+    overflow: hidden;
 }
 .track-links {
     overflow-y: scroll;

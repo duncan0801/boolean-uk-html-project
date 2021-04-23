@@ -74,7 +74,7 @@ body {
     color: white;
 }
 
-main {
+.main {
     display: grid;
     grid-template:
         "clip-library video" minmax(450px, 1fr)
@@ -103,7 +103,7 @@ main {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .project-complete svg {

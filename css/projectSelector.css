@@ -1,3 +1,4 @@
+
 .logo {
     font-family: "Zen Dots", cursive;
     font-size: 3em;
@@ -8,24 +9,75 @@ header {
     display: grid;
     align-items: center;
 }
+.project-selector-body {
+    background-color: #343A3F;
+    
+}
+.project-selector-main {
+    height: calc(100vh - 250px);
+    overflow: scroll;
+    border-radius: 50px;
+}
+
+
 
 h2.active {
     padding: 10px 10px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+h2.new {
+    color: grey;
+}
+
+.project-grid {
+    height: fit-content;
+    margin: auto;
+    width: 70vw;
+}
+
+.project-grid {
+    background-color: var(--tile-grey);
+    
+    overflow: scroll;
+}
 
 .project-grid ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 100px);
+   
+    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    
+    
+    place-content: center;
+    gap: 10px;
+
 }
 
-.project-grid img,
-.project-grid svg {
-    object-fit: cover;
+.project-grid li {
+    height: 300px;
+    display: grid;
+    place-content: start center;
+    text-align: center;
+    background-color: #43484ea8 ;
+    border-radius: 20px;
 }
+
+
+.project-grid img, .project-grid svg {
+    object-fit: cover;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    
+}
+.image-container.symbol {
+    display: grid;
+    place-items: center;
+}
+
 
 .project-grid ul .image-container {
-    width: 100px;
+    width: 100%;
+    height: 200px
     
 }
