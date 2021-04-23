@@ -10,8 +10,8 @@
 <body>
     
     <header class="top-nav">
-        
         <div class="project-complete">
+        <a href="create-project.html">
             <svg width="30" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <g>
@@ -26,9 +26,11 @@
 		<path d="M432,352v96H80v-96H16v128c0,17.696,14.336,32,32,32h416c17.696,0,32-14.304,32-32V352H432z"/>
 	</g>
 </g>
-</svg>
+        </svg>
+        
 
             <span>View Previous Projects</span>
+        </a>
         </div>
         <nav>
             <ul>
@@ -60,14 +62,14 @@
                             File Name:
                         </label>
                         <input type="text" name="file-name">
-                        <label for="clip-length">
+                        <label  for="clip-length">
                             Clip Length:
                         </label>
-                        <input placeholder="00:00"type="number" name="clip-length">
+                        <input placeholder="00:00" min="0" type="number" name="clip-length">
                         <label for="file-size">
                             File Size:
                         </label>
-                        <input placeholder="MB"type="number" name="file-size">
+                        <input placeholder="MB" type="number" min="0" name="file-size">
                     </div>
                     <h3>
                         File Type:

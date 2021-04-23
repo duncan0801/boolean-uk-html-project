@@ -4,7 +4,6 @@
         "clip-library video" minmax(auto, 350px)
         "tracks tracks" 1fr /
         minmax(550px, 1fr) auto;
-        
 }
 .clip-library {
     grid-area: clip-library;
@@ -29,7 +28,7 @@
 .tracks-editing {
     display: grid;
     grid-template-columns: auto 1fr;
-    
+
     overflow: hidden;
 }
 .track-links {
@@ -104,6 +103,9 @@
 
     position: absolute;
     top: 0;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
 .audio-box {
@@ -136,4 +138,57 @@
 
 .clip-box:hover {
     background-color: rgba(124, 240, 255, 0.815);
+}
+
+.fx-menu {
+    display: none;
+    background-color: white;
+}
+.down-arrow-container {
+    width: 10px;
+    position: relative;
+}
+
+.down-arrow {
+    width: 10px;
+    height: 10px;
+
+    fill: black;
+    margin-right: 5px;
+}
+
+.fx-menu {
+    width: 200px;
+    background-color: #2a2e33;
+    padding: 10px;
+    border: 1px solid #00000020;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.fx-menu legend {
+    font-weight: bold;
+}
+
+.fx-menu input {
+    background: none;
+    border: none;
+}
+.fx-menu select {
+    background: rgba(245, 245, 245, 0.247);
+}
+.fx-menu button {
+    padding: 5px;
+    margin: auto;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(92, 168, 255, 0.774);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.down-arrow-container:hover .fx-menu {
+    visibility: visible;
 }
